@@ -6,8 +6,7 @@ router.get('/mensajes', (req: Request, res:Response)=>{
     res.json({
         ok: true,
         mensaje: "Todo esta bien!!"
-    })
-
+    });
 })
 
 router.post('/mensajes', (req: Request, res:Response)=>{
@@ -17,7 +16,7 @@ router.post('/mensajes', (req: Request, res:Response)=>{
         ok: true,
         cuerpo,
         de
-    })
+    });
 });
 
 router.post('/mensajes/:id', (req: Request, res:Response)=>{
@@ -29,7 +28,7 @@ router.post('/mensajes/:id', (req: Request, res:Response)=>{
         cuerpo,
         de,
         id
-    })
-})
+    });
+});
 
 export default router;
